@@ -27,7 +27,7 @@ def process_image(image_path):
     return image
 
 def predict(image_path, model, topk, category_names, device):
-    # Process the image
+    
     image = process_image(image_path)
     image = image.unsqueeze(0).to(device)
 
